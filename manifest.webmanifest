@@ -1,0 +1,19 @@
+{
+  "name": "Dinner Decider",
+  "short_name": "Dinner",
+  "description": "A fun spin-the-wheel restaurant picker for date night.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fff7ea",
+  "theme_color": "#f25c54",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
