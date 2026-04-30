@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f25c54" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Dinner Decider" />
+    <title>Dinner Decider</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/app-icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/app-icon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="decision-panel" aria-labelledby="app-title">
+        <div class="intro">
+          <p class="eyebrow">Date night solved</p>
+          <h1 id="app-title">Dinner Decider</h1>
+          <p class="subhead">Spin once, trust the wheel, and let dinner happen.</p>
+        </div>
+
+        <div class="wheel-zone">
+          <div class="pointer" aria-hidden="true"></div>
+          <div class="wheel-wrap">
+            <div id="wheel" class="wheel" aria-label="Restaurant decision wheel"></div>
+            <div id="result-card" class="result-card" aria-live="polite">
+              <span class="result-label">Dinner says</span>
+              <strong id="result-name">Ready when you are</strong>
+              <span id="result-category">Spin the wheel to decide.</span>
+            </div>
+          </div>
+        </div>
+
+        <button id="spin-button" class="spin-button" type="button">
+          Spin the wheel
+        </button>
+      </section>
+
+      <section class="controls-panel" aria-label="Restaurant options">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Options</p>
+            <h2>Tonight's lineup</h2>
+          </div>
+          <button id="reset-button" class="icon-button" type="button" aria-label="Restore default restaurants">
+            R
+          </button>
+        </div>
+
+        <div class="filter-row" id="filter-row" aria-label="Filter restaurants by category"></div>
+
+        <form id="add-form" class="add-form">
+          <label>
+            <span>Name</span>
+            <input id="restaurant-name" name="name" type="text" placeholder="Add a restaurant" autocomplete="off" />
+          </label>
+          <label>
+            <span>Category</span>
+            <select id="restaurant-category" name="category">
+              <option value="Burgers">Burgers</option>
+              <option value="Chicken">Chicken</option>
+              <option value="Pizza">Pizza</option>
+              <option value="Tacos">Tacos</option>
+              <option value="Sandwiches">Sandwiches</option>
+              <option value="Mexican">Mexican</option>
+              <option value="Breakfast">Breakfast</option>
+              <option value="Dessert">Dessert</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+          <button class="add-button" type="submit" aria-label="Add restaurant">+</button>
+        </form>
+
+        <div class="list-tools">
+          <button id="favorites-toggle" class="text-button" type="button">Favorites only</button>
+          <span id="count-label">0 choices</span>
+        </div>
+
+        <ul id="restaurant-list" class="restaurant-list"></ul>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
