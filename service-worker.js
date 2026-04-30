@@ -7,6 +7,8 @@ const filesToCache = [
   "./app.js",
   "./manifest.webmanifest",
   "./assets/app-icon.svg",
+  "./assets/app-icon-192.png",
+  "./assets/app-icon-512.png",
   "./assets/logos/alfredos.png",
   "./assets/logos/arbys.png",
   "./assets/logos/burgerking.png",
