@@ -1,4 +1,4 @@
-const cacheName = "dinner-decider-v1";
+const cacheName = "idc-you-pick-v2";
 
 const filesToCache = [
   "./",
@@ -6,9 +6,8 @@ const filesToCache = [
   "./styles.css",
   "./app.js",
   "./manifest.webmanifest",
-  "./assets/app-icon.svg",
-  "./assets/app-icon-192.png",
-  "./assets/app-icon-512.png",
+  "./assets/brand-logo-192.webp",
+  "./assets/brand-logo-512.webp",
   "./assets/logos/alfredos.png",
   "./assets/logos/arbys.png",
   "./assets/logos/burgerking.png",

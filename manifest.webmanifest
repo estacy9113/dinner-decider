@@ -1,7 +1,7 @@
 {
-  "name": "Dinner Decider",
-  "short_name": "Dinner",
-  "description": "A fun spin-the-wheel restaurant picker for date night.",
+  "name": "IDC, You Pick",
+  "short_name": "IDC Pick",
+  "description": "A playful dinner decision wheel for couples who cannot choose.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
@@ -10,21 +10,15 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "assets/app-icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "assets/app-icon-192.png",
+      "src": "assets/brand-logo-192.webp",
       "sizes": "192x192",
-      "type": "image/png",
+      "type": "image/webp",
       "purpose": "any maskable"
     },
     {
-      "src": "assets/app-icon-512.png",
+      "src": "assets/brand-logo-512.webp",
       "sizes": "512x512",
-      "type": "image/png",
+      "type": "image/webp",
       "purpose": "any maskable"
     }
   ]
